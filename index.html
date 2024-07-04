@@ -23,9 +23,6 @@
 
 </head>
 <body>
-  <div class="test_one">
-    <h1>ok123</h1>
-  </div>
     <!-- NAV-START -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -500,6 +497,84 @@
     <!-- New arrival ends -->
 
 
+    <!-- TIMMER  -->
+     <section id="timer">
+      <div class="container">
+         <div class="shadow_test">
+          <div class="counter_wrapper">
+            <ul id="count_active">
+               <li class="single_counter">
+                 <h2 class="days">00</h2>
+                 <span class="days_text">Days</span>
+               </li>
+               <li class="single_counter">
+                 <h2 class="days">01</h2>
+                 <span class="days_text">Hours</span>
+               </li>
+               <li class="single_counter">
+                 <h2 class="days">02</h2>
+                 <span class="days_text">Mins</span>
+               </li>
+               <li>
+                 <h2 class="sec">03</h2>
+                 <span class="days_text ">Sec</span>
+               </li>
+            </ul>
+         </div>
+ 
+         <div class="counter_parent">
+           <div class="counter_child">
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span><del>$356.35</del></span>
+              </div>
+           </div>
+  
+ 
+           
+           <div class="counter_child">
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span><del>$356.35</del></span>
+              </div>
+           </div>
+  
+ 
+           <div class="counter_child">
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span><del>$356.35</del></span>
+              </div>
+           </div>
+  
+ 
+           <div class="counter_child">
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span><del>$356.35</del></span>
+              </div>
+           </div>
+  
+ 
+ 
+         </div>
+         </div>
+      </div>
+     </section>
+    <!-- TIMMER END -->
+
      <!-- footer -->
      <footer class="footer">
       <div class="container">
@@ -637,8 +712,19 @@
     <!-- SLICK SLIDER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!-- BOOTSTRAP -->
+     <!-- COUNTER JS -->
+      <script src="./assets/js/counter.js"></script>
+
      <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM JS -->
      <script src="./assets/js/app.js"></script>
+
+     <script>
+      $('#count_active').countdown('2025/01/01', function(event) {
+        
+        $('.sec').html(event.strftime('%S'));
+        console.log()
+      });
+     </script>
 </body>
 </html>

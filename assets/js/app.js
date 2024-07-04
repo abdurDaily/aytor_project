@@ -5,6 +5,7 @@ let inputTest = document.querySelector('.input-test');
 
 searchBox.addEventListener('click',function(e){
     e.preventDefault();
+    console.log(e.target.classList);
     if(e.target.classList.contains('active_search')){
         searchBox.classList.remove('active_search');
     }
@@ -100,3 +101,16 @@ $(function(){
 // ** BOOTSTRAP TOOLTIP
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
+$(function(){
+  
+$('.counter_parent').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1
+});
+});
+
+
